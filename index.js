@@ -33,11 +33,11 @@ app.get('/multiplication/:num1/:num2', (req, res) => {
 });
 
 //Ej 2
-app.get('/junta/:m3/con/:m4', (req, res) => {
-    var m3 = req.params.m3;
-    var m4 = req.params.m4;
-    res.send("El mensaje unido es: " + (m3 + m4));
-});
+app.get('/junta/:n/:a', (req, res) => {
+    var name = req.params.n;
+    var nam = req.params.a;
+    res.send(`junta ${name} con ${nam}`);
+ });
 
 //Ej 3
 app.use((req, res, next) => {
