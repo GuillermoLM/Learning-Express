@@ -33,7 +33,7 @@ app.get('/multiplication/:num1/:num2', (req, res) => {
 });
 
 //Ej 2
-app.get('/junta/:n/:a', (req, res) => {
+app.get('/junta/:n/con/:a', (req, res) => {
     var name = req.params.n;
     var nam = req.params.a;
     res.send(`junta ${name} con ${nam}`);
