@@ -12,7 +12,7 @@ app.get('/books',(req,res) => {
         } 
         try
         {
-            books = JSON.parse(data);
+            var books = JSON.parse(data);
         }
         catch (error)
         {
